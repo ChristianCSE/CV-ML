@@ -12,7 +12,7 @@ Just stuff I like
 [uber](http://eng.uber.com/)
 <!-- Libraries  -->
 
-# Useful Python Libraries
+# Useful Python Libs
 [NumPy](http://www.numpy.org/)
 
 [matplot](http://matplotlib.org/)
@@ -31,6 +31,8 @@ Just stuff I like
 
 [spaCy](https://explosion.ai/blog/spacy-deep-learning-keras)
 
+
+# Deep Learning Libs
 [theano: deep learning](http://deeplearning.net/software/theano/)
 
 [torch: deep learning](http://torch.ch/)
@@ -39,6 +41,15 @@ Just stuff I like
 
 [keras: deep learning](https://keras.io/)
 
+# Useful C++ Libs
+[mlpack](http://www.mlpack.org/)
+
+[openCV](http://opencv.org/)
+
+[VLFeat](http://www.vlfeat.org/)
+
+[ccv](http://libccv.org/)
 
 <!-- courses --> 
+# Courses 
 [ml course](https://www.cs.ox.ac.uk/people/nando.defreitas/machinelearning/)
