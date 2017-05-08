@@ -1,0 +1,9 @@
+// the configured options and settings for Tutorial
+// Configured files will be written to binary tree 
+// we MUST add that dir to the  
+// list of paths to search for include files
+#define Tutorial_VERSION_MAJOR @Tutorial_VERSION_MAJOR@
+#define Tutorial_VERSION_MINOR @Tutorial_VERSION_MINOR@
+//source code uses USE_MATH; provided from CMake to the soruce 
+//code through TutorialConfig.h
+#cmakedefine USE_MATH

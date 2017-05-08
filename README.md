@@ -1,12 +1,21 @@
 # General Overiew
+ - Learning generic libraries (see relevant terms)
+ - make stuff & track C++ learning 
+ - might need to learn Matlab too
 
 
 
+# Relevant Terms 
+[CMAKE](https://cmake.org/)
+
+[OpenGL](https://www.opengl.org/)
+
+[OpenCV](http://docs.opencv.org/)
+
+[Generative adversarial networks](https://en.wikipedia.org/wiki/Generative_adversarial_networks)
 
 
-
-
-# CV-ML
+# CV & ML
 Just stuff I like
 
 [Google Scholar Papers](https://scholar.google.com/citations?view_op=top_venues&hl=en&vq=eng_computervisionpatternrecognition)

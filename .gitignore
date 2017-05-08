@@ -4,5 +4,44 @@
 #npm
 node_modules
 
-#New Relic
-dump.rdb
+#javaC
+*.class
+*.iml
+*.gradle
+*/local.properties
+*/.idea/workspace.xml
+*/.idea/libraries
+*.DS_Store
+*/build
+*/captures
+*bin/
+*gen/
+.idea/vcs.xml
+idea/
+idea
+.idea
+
+
+### Emacs ###
+# -*- mode: gitignore; -*-
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+
+# opencv
+*/opencv-3.2.0
+
+# cmake-library
+*cmake-3.8.1/
+*/.gitattributes
+cmake-3.8.1
+*/CMakeFiles
+
+*CMakeCache.txt
+*/CMakeCache.txt
