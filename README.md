@@ -1,15 +1,24 @@
+# General Overiew
+
+
+
+
+
+
+
 # CV-ML
-Just stuff I like 
+Just stuff I like
 
 [Google Scholar Papers](https://scholar.google.com/citations?view_op=top_venues&hl=en&vq=eng_computervisionpatternrecognition)
 
-[Computer Vision and Pattern Recognition Papers](https://arxiv.org/list/cs.CV/recent)
+[CV & Pattern Recognition Papers](https://arxiv.org/list/cs.CV/recent)
 
-[http://cvpr2016.thecvf.com/](CVPR16)
+[CVPR16](http://cvpr2016.thecvf.com/)
 
 [wit.ai](https://wit.ai/docs)
 
 [uber](http://eng.uber.com/)
+
 <!-- Libraries  -->
 
 # Useful Python Libs
