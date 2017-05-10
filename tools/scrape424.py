@@ -30,7 +30,7 @@ def getDates():
     curr = title[0]
     if '0' in curr and 'cs' not in curr:
       container.append(curr)
-  print(container)    
+  # print(container)    
   return container
 
 def breakDateTable(url):
@@ -47,17 +47,22 @@ def breakDateTable(url):
     contURL = contURL.replace('/tn/', '/')
     # print(contURL)
     finalizedPicURL.append(contURL)
-  print(finalizedPicURL)
+  # print(finalizedPicURL)
   return finalizedPicURL
 
+#get a date, that date has an images folder
+#we scrape each individual image
 def partitionDates(datesWithTraits): 
+  globalChecker = False
   for i in datesWithTraits:
     url = 'http://www.mathcs.emory.edu/~cs424000/share/' + i + 'images/'
     picturesContainer = breakDateTable(url)
     # have access to one lecture day
     # now make a new subfolder and start downloading the images into that folder
     # print(picturesContainer, i)
-    makePDF(picturesContainer, i)
+    # if (str(i) == '0301/'): timeout happened
+    #   globalChecker = True
+    makePDF(picturesContainer, i, globalChecker)
 
 def readURLPDF(dlURL, writeTo):
   pdfGot = urllib.request.urlopen(dlURL)
@@ -66,12 +71,16 @@ def readURLPDF(dlURL, writeTo):
   pdfGot.close()
   localFile.close()
 
-def makePDF(currentDL, o):
-  name = '../lectures/'
+
+def makePDF(currentDL, o, globalChecker):
+  # print(o)
+  # ../../Desktop/lectures/0301/9.jpg
+  name = '../../Desktop/lectures/'
   subFolderName = 'mkdir ' + o
-  currentDL = currentDL[:len(currentDL)-1]
+  # if(globalChecker): timeout happened
   subprocess.call(subFolderName, shell=True, cwd='/Users/christian/Desktop/lectures')
   counter = 0
+  # if(globalChecker): timeout happened
   for currLink in currentDL:
     curr_file_name = name + str(o) + str(counter) + '.jpg'
     counter = counter + 1
@@ -79,5 +88,7 @@ def makePDF(currentDL, o):
     subprocess.call(["touch", curr_file_name])
     readURLPDF(currLink, curr_file_name)
 
+#make sure to create a folder 'lectures' in your Desktop 
+globalChecker = False
 datesWithTraits = getDates()
 partitionDates(datesWithTraits)
